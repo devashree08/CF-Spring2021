@@ -34,7 +34,7 @@ if (rows < 6) {
     puts("\x1b[31m Error displaying rest of flag\x1b[0m");
   }
   ```
-
+The main function is only telling it to print 2 rows, and it shows an error if that's less than 6. So, let's use gdb to call output manually with a higher number of rows.
 ```console
 pwndbg> b main
 Breakpoint 1 at 0x8d5: file flag.c, line 30.
